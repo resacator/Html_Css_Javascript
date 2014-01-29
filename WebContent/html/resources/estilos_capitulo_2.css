@@ -1,0 +1,117 @@
+@CHARSET "ISO-8859-1";
+
+/* selector universal */
+* {
+	font-size: 14px;
+	margin: 5px;
+}
+/* selector por palabra clave */
+p {
+	font-size: 8px;
+	font-family: sans-serif;
+}
+/* selector por atributo 'id' */
+#texto0 {
+	font-size: 10px;
+	font-family: sans-serif;
+}
+/* selector por atributo 'class' */
+.texto1 {
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+.texto2 {
+	font-size: 14px;
+	font-family: sans-serif;
+}
+/* selector por palabra clave y atributo 'class' */
+p.texto2 {
+	font-size: 16px;
+	font-family: sans-serif;
+}
+/* selector por valor de atributo 'name' */
+p[name] {
+	font-size: 18px;
+	font-family: sans-serif;
+}
+/* selector por atributo 'name' cuyo valor comienza por una cadena concreta */
+p[name^="empiezaPor"] {
+	font-size: 20px;
+	font-family: sans-serif;
+}
+/* selector por atributo 'name' cuyo valor termina una cadena concreta */
+p[name$="Termina"] {
+	font-size: 22px;
+	font-family: sans-serif;
+}
+/* selector por atributo 'name' cuyo valor contiene una cadena concreta */
+p[name*="contiene"] {
+	font-size: 24px;
+	font-family: sans-serif;
+}
+/* selector por pseudoclase: 'hijo número N' */
+.texto3:nth-child(1) {
+	font-size: 22px;
+	background: #888888;
+	font-family: sans-serif;
+}
+
+.texto3:nth-child(2) {
+	font-size: 20px;
+	background: #887777;
+	font-family: sans-serif;
+}
+/* selector por pseudoclase: 'todos los hijos impares' */
+.texto4:nth-child(odd) {
+	font-size: 18px;
+	background: #886666;
+	font-family: sans-serif;
+}
+/* selector por pseudoclase: 'todos los hijos pares' */
+.texto4:nth-child(even) {
+	font-size: 16px;
+	background: #885555;
+	font-family: sans-serif;
+}
+/* selector por pseudoclase: 'el primer hijo' */
+.texto5:first-child {
+	font-size: 14px;
+	background: #884444;
+	font-family: sans-serif;
+}
+/* selector por pseudoclase: 'el último hijo' */
+.texto5:last-child {
+	font-size: 12px;
+	background: #883333;
+	font-family: sans-serif;
+}
+/* selector por pseudoclase: 'el único hijo' */
+.texto6:only-child {
+	font-size: 10px;
+	background: #882222;
+	font-family: sans-serif;
+}
+/* selector por posición: el hijo 'x' (parte derecha) del padre 'y' (parte izquierda) */
+#dummy > p.texto7 {
+	font-size: 12px;
+	background: #881111;
+	font-family: sans-serif;
+}
+/* selector por posición: los hermanos 'X' e 'Y', posición consecutiva */
+.texto7 + .texto8 {
+	font-size: 14px;
+	background: #880000;
+	font-family: sans-serif;
+}
+/* selector por posición: los hermanos 'X' e 'Y', posición no consecutiva */
+.texto7 ~ .texto9 {
+	font-size: 16px;
+	background: #770000;
+	font-family: sans-serif;
+}
+/* selector por negación: 'todos los que no sean X'
+:not(p) {
+	margin: 0px;
+	font-family: sans-serif;
+}

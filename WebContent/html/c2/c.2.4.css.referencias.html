@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="ISO-8859-1">
+<title>capítulo 2.4.</title>
+<link rel="stylesheet" href="../resources/estilos_capitulo_2.css " />
+</head>
+<body>
+	<nav>
+		<a href="../../index.jsp">back to index</a>
+	</nav>
+
+	<p>
+		Texto referenciado por palabra clave. tamaño 8 (<em>p</em>)
+	</p>
+	<p id="texto0">
+		Texto referenciado por atributo id. tamaño 140(<em>#texto0</em>)
+	</p>
+	<p class="texto1">
+		Texto referenciado por atributo class. tamaño 12(<em>.texto1</em>)
+	</p>
+	<strong class="texto2"> Texto referenciado por atributo class
+		y por palabra clave. tamaño 14(<em>strong.texto2</em>)
+	</strong>
+	<p class="texto2">
+		Texto referenciado por atributo class y por palabra clave. tamaño 16(<em>p.texto2</em>)
+	</p>
+	<p name="miTexto">
+		Texto referenciado por atributo con nombre <em>name</em> definido.
+		tamaño 18(<em>p[name]</em>)
+	</p>
+	<p name="empiezaPorTexto">
+		Texto referenciado por atributo con nombre <em>name</em> que empieza
+		por "empiezaPor". tamaño 20(<em>p[name^="empiezaPor"]</em>)
+	</p>
+	<p name="enTextoTermina">
+		Texto referenciado por atributo con nombre <em>name</em> que termina
+		en "Termina". tamaño 22(<em>p[name$="Termina"]</em>)
+	</p>
+	<p name="contiene">
+		Texto referenciado por atributo con nombre <em>name</em> que contiene
+		la cadena "contiene". tamaño 24(<em>p[name*="contiene"]</em>)
+	</p>
+	<div id="dummy">
+		<p class="texto3">
+			Texto referenciado por pseudoclase. Elemento con nombre <em>texto1</em>
+			hijo de otro elemento, el primero que encuentre. tamaño 22(<em>.texto3:nth-child(1)</em>)
+		</p>
+		<p class="texto3">
+			Texto referenciado por pseudoclase. Elemento con nombre <em>texto1</em>
+			hijo de otro elemento, el segundo que encuentre. tamaño 20(<em>.texto3:nth-child(2)</em>)
+		</p>
+		<p class="texto4">
+			Texto referenciado por pseudoclase. Elemento con nombre <em>texto4</em>
+			hijo de otro elemento, posición impar. tamaño 18(<em>.texto4:nth-child(odd)</em>)
+		</p>
+		<p class="texto4">
+			Texto referenciado por pseudoclase. Elemento con nombre <em>texto4</em>
+			hijo de otro elemento, posición par. tamaño 16(<em>.texto4:nth-child(even)</em>)
+		</p>
+	</div>
+	<div id="dummy">
+		<p class="texto5">
+			Texto referenciado por pseudoclase. Elemento con nombre <em>texto5</em>
+			hijo de otro elemento, el primero que encuentre. tamaño 14(<em>.texto5:first-child</em>)
+		</p>
+		<p class="texto5">
+			Texto referenciado por pseudoclase. Elemento con nombre <em>texto5</em>
+			hijo de otro elemento, el ultimo que encuentre. tamaño 12(<em>.texto5:last-child</em>)
+		</p>
+	</div>
+	<div id="dummy">
+		<p class="texto6">
+			Texto referenciado por pseudoclase. Elemento con nombre <em>texto6</em>
+			hijo de otro elemento, un solo elemento. tamaño 10(<em>.texto6:only-child</em>)
+		</p>
+	</div>
+	<div id="dummy">
+		<p class="texto7">
+			Texto referenciado por selector <em>></em>. Elemento con nombre <em>texto7</em>
+			hijo de otro elemento llamado dummy. tamaño 12(<em>#dummy
+				> texto7</em>)
+		</p>
+		<p class="texto8">
+			Texto referenciado por selector <em>+</em>. Elemento con nombre <em>texto8</em>
+			 ubicados justo a continuación de otro elemento con nombre <em>texto7</em>
+			y al mismo nivel jerárquico. tamaño 12(<em>texto8 > texto7</em>)
+		</p>
+				<p class="texto9">
+			Texto referenciado por selector <em>~</em>. Elemento con nombre <em>texto9</em>
+			 ubicados al mismo nivel jerárquico que otro elemento con nombre <em>texto7</em>
+			sin importar su posición relativa. tamaño 12(<em>texto7 ~ texto9</em>)
+		</p>
+	</div>
+	Referenciar a todos los elementos. Tamaño 14 por defecto y margen de
+	5px. (
+	<em>*</em>)
+</body>
+</html>
