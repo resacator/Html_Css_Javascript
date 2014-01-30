@@ -47,10 +47,14 @@
 						Ejemplo de CSS sobre plantilla</a></li>
 			</ul>
 		</article>
-				<article>
+		<article>
 			<header>
 				<h3>CAPÍTULO 3</h3>
 			</header>
+			<ul>
+				<li><a href="./html/c3/c.3.1.base.capitulo.3.html">3.1. Una
+						plantilla simple</a></li>
+			</ul>
 		</article>
 	</section>
 </body>

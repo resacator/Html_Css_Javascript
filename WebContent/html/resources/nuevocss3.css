@@ -1,1 +1,16 @@
 @CHARSET "ISO-8859-1";
+body {
+	text-align: center;
+}
+#principal {
+	display: block;
+	width: 500px;
+	margin: 50 px auto;
+	padding: 15 px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+}
+#titulo {
+	font: bold 36px verdana, sans-serif;
+}
