@@ -47,6 +47,11 @@
 						Ejemplo de CSS sobre plantilla</a></li>
 			</ul>
 		</article>
+				<article>
+			<header>
+				<h3>CAPÍTULO 3</h3>
+			</header>
+		</article>
 	</section>
 </body>
 </html>
