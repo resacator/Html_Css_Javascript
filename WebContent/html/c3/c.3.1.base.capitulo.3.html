@@ -5,8 +5,145 @@
 <link rel="stylesheet" href="../resources/nuevocss3.css">
 </head>
 <body>
-	<header id="principal">
-		<span id="titulo">Estilos CSS Web 2.0.</span>
-	</header>
+	<div id="agrupar">
+		<header id="principal">
+			<a name="top"><span id="titulo">Estilos CSS Web 2.0.</span></a>
+		</header>
+		<nav id="menu">
+			<ul>
+				<li><a href="#border-image">border-image</a></li>
+				<li><a href="#border-radius">border-radius</a></li>
+				<li><a href="#font-face">box-shadow</a></li>
+				<li><a href="#linear-gradient">linear-gradient</a></li>
+				<li><a href="#radial-gradient">radial-gradient</a></li>
+				<li><a href="#outline">outline</a></li>
+				<li><a href="#outline-offset">outline-offset</a></li>
+				<li><a href="#rgba">rgba</a></li>
+				<li><a href="#hsla">hsla</a></li>
+				<li><a href="#font-face">@font-face</a></li>
+			</ul>
+		</nav>
+		<section id="seccion">
+			<article>
+				<a name="border-image"><h1>border-image</h1></a> Permite asociar una
+				imagen como elemento generador del borde definido. <br> El
+				ultimo parametro admite los valores: <br>- repeat: el aspecto
+				de la imagen no se altera y se recorta si es necesario <br>-
+				round: determina la longitud del largo a cubrir y ajusta el tamaño
+				de las piezas para redondear a las N piezas enteras necesarias <br>-
+				stretch: usa una sola imagen y la expande por la totalidad del area
+				del borde.
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article>
+				<a name="border-radius"><h1>border-radius</h1></a> Permite redondear
+				las esquinas de una figura. <br> Admite hasta 4 valores:<br>
+				4 valores separados por ',': supIz, supDe, InfDe, InfIz<br> 2
+				valores separados por '/': horiz / vert<br> 1 valor: para cada
+				esquina usa el mismo valor
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article>
+				<a name="box-shadow"><h1>box-shadow</h1></a> Crea efecto sombra a un
+				elemento. <br>El primer valor es el color (usando rgb,
+				#XXXXXX...). <br>El segundo valor es la distancia horizontal. <br>El
+				tercer valor es la distancia vertical. <br>El cuarto valor es
+				opcional e indica la distancia de difuminado (Ojo porque AMPLIA la
+				superficie que cubre...) <br>El quinto valor es opcional:
+				'inset', aplica el efecto al interior de la caja
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article>
+				<a name="linear-gradient"><h1>linear-gradient</h1></a> propiedad
+				linear-gradient(a,b X,c Y): <br>Permite realizar un degradado
+				de color. <br>La propiedad se asocia al fondo (background). <br>el
+				primer parametro determina la posición de inicio. <br>Se indica
+				en pixeles, % o clave (top, right...). <br>El segundo parametro
+				determina el color inicial. Admite punto de terminación del color. <br>el
+				tercer parametro determina el color final. Admite punto de
+				terminación del color.
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article>
+				<a name="radial-gradient"><h1>radial-gradient</h1></a> Permite
+				realizar un degradado de color. La propiedad se asocia al fondo
+				(background). <br> El primer parametro determina la posición de
+				inicio. Se indica en pixeles, % o clave (top, right...) <br>El
+				segundo parametro determina la forma. Solo admite los valores circle
+				y ellipse. <br>El tercer parametro determina el color inicial.
+				Admite punto de terminación del color. <br>El cuarto parametro
+				determina el color final. Admite punto de terminación del color.
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article>
+				<a name="outline"><h1>outline</h1></a> La propiedad outline permite
+				establecer un segundo borde a un elemento y desplazarlo. Utiliza los
+				mismo parámetros que border
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article>
+				<a name="outline-offset"><h1>outline-offset</h1></a> la propiedad
+				outline-offset indica la distancia entre los dos bordes.
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article>
+				<a name="text-shadow"><h1>text-shadow</h1></a> Permite aplicar
+				efecto sombra a elementos irregurares como textos <br>El primer
+				valor es el color (usando rgb, #XXXXXX...). <br>El segundo
+				valor es la distancia horizontal. <br>El tercer valor es la
+				distancia vertical. <br>El cuarto valor es opcional e indica la
+				distancia de difuminado. Ojo porque AMPLIA la superficie que cubre.
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article>
+				<a name="rgba"><h1>rgba</h1></a> Funcion para asignar color. Es una
+				versión mejorada de rgb(). <br>El primer atributo es el valor
+				rojo. <br>El segundo atributo es el valor verde. <br>El
+				tercer atributo es el valor azul. <br>El cuarto atributo es el
+				rango de opacidad, de 0 a 1.
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article>
+				<a name="hsla"><h1>hsla</h1></a> Función para asignar color. Es una
+				versión mejorada de hsl(). <br> El primer atributo es el valor
+				del tono: Representa el color extraído de una rueda imaginaria en la
+				que: <br>- los grados cercanos a 0/360 contienen los colores
+				rojos <br>- los grados cercanos a 120 contienen los colores
+				verdes <br>- los grados cercanos a 240 contienen los colores
+				azules. <br>El segundo atributo es el valor de la saturacion. <br>
+				El tercer atributo es el valor. <br>El cuarto atributo es el
+				rango de opacidad, de 0 a 1.
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article>
+				<a name="font-face"><h1>@font-face</h1></a> Permite distribuir un
+				tipo de fuente para evitar que el usuario carezca de la fuente
+				utilizada en la pagina
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+		</section>
+	</div>
 </body>
 </html>
