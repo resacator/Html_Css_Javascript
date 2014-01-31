@@ -1,16 +1,26 @@
 @CHARSET "ISO-8859-1";
+
 body {
 	text-align: center;
 }
+
 #principal {
 	display: block;
 	width: 500px;
 	margin: 50 px auto;
 	padding: 15 px;
 	text-align: center;
-	border: 1px solid #999999;
+	border: 29px;
+	/*border-image permite asociar una imagen como elemento generador del borde definido
+	 el ultimo parametro admite los valores:
+	  - repeat: el aspecto de la imagen no se altera y se recorta si es necesario
+	  - round: determina la longitud del largo a cubrir y ajusta el tamaño de las piezas para redondear a las N piezas enteras necesarias
+	  - stretch: usa una sola imagen y la expande por la totalidad del area del borde.
+	*/
+	-moz-border-image: url('../resources/sample.jpg') 29 stretch;
+	-webkit-border-image: url('../resources/sample.jpg') 29 stretch;
+	border-image: url('../resources/sample.jpg') 29 stretch;
 	background: #DDDDDD;
-	
 	/*border-radius: redondear las esquinas de una figura. 
 	  Admite hasta 4 valores:
 	    4 valores separados por ',': supIz, supDe, InfDe, InfIz
@@ -25,10 +35,9 @@ body {
 	  El tercer valor es la distancia vertical
 	  El cuarto valor es opcional e indica la distancia de difuminado. ojo porque AMPLIA la superficie que cubre...
 	  El quinto valor es opcional: 'inset', aplica el efecto al interior de la caja*/
-	  
-	-moz-box-shadow: rgb(150,150,150) 5px 5px 10px inset;
-	-webkit-box-shadow: rgb(150,150,150) 5px 5px 10px inset;
-	box-shadow: rgb(150,150,150) 5px 5px 10px inset;
+	-moz-box-shadow: rgb(150, 150, 150) 5px 5px 10px inset;
+	-webkit-box-shadow: rgb(150, 150, 150) 5px 5px 10px inset;
+	box-shadow: rgb(150, 150, 150) 5px 5px 10px inset;
 	/*propiedad linear-gradient(a,b X,c Y): permite realizar un degradado de color. La propiedad se asocia al fondo (background).
 	    el primer parametro determina la posición de inicio. Se indica en pixeles, % o clave (top, right...)
 	    el segundo parametro determina el color inicial. Admite punto de terminación del color.
@@ -36,7 +45,7 @@ body {
 	*/
 	background: -webkit-linear-gradient(top, #FFFFFF 50%, #006699 90%);
 	background: -moz-linear-gradient(top, #FFFFFF 50%, #006699 90%);
-		/*propiedad radial-gradient(a,b,c X,d Y): permite realizar un degradado de color. La propiedad se asocia al fondo (background).
+	/*propiedad radial-gradient(a,b,c X,d Y): permite realizar un degradado de color. La propiedad se asocia al fondo (background).
 	    el primer parametro determina la posición de inicio. Se indica en pixeles, % o clave (top, right...)
 	    el segundo parametro determina la forma. Solo admite los valores circle y ellipse.
 	    el tercer parametro determina el color inicial. Admite punto de terminación del color.
@@ -45,15 +54,42 @@ body {
 	background: -webkit-radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);
 	background: -moz-radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);
 	/*NOTA: LINEAR Y RADIAL SON INCOMPATIBLES ENTRE SÍ*/
+	/*La propiedad outline permite establecer un segundo borde a un elemento y desplazarlo 
+	  Utiliza los mismo parámetros que border
+	*/
+	outline: 2px dashed #000099;
+	/* la propiedad outline-offset indica la distancia entre los dos bordes.
+	*/
+	outline-offset: 15px;
 }
+
 #titulo {
-	font: bold 36px MiNuevaFuente,verdana, sans-serif;
-		/* text-shadow: permite aplicar efecto sombra a elementos irregurares como textos
+	font: bold 36px MiNuevaFuente, verdana, sans-serif;
+	/* text-shadow: permite aplicar efecto sombra a elementos irregurares como textos
 	  El primer valor es el color (usando rgb, #XXXXXX...)
 	  El segundo valor es la distancia horizontal
 	  El tercer valor es la distancia vertical
-	  El cuarto valor es opcional e indica la distancia de difuminado. ojo porque AMPLIA la superficie que cubre...*/
-	text-shadow: #9999FF 3px 3px 5px;
+	  El cuarto valor es opcional e indica la distancia de difuminado. ojo porque AMPLIA la superficie que cubre...
+	  */
+	/* rgba: funcion para asignar color. Versión mejorada de rgb()
+	  El primer atributo es el valor rojo
+	  El segundo atributo es el valor verde
+	  El tercer atributo es el valor azul 
+	  El cuarto atributo es el rango de opacidad, de 0 a 1
+	  Ejemplo: rgba(0, 0, 0, 0.5)
+	  */
+	text-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
+	/* hsla: función para asignar color. Versión mejorada de hsl()
+	  El primer atributo es el valor del tono:
+	     Representa el color extraído de una rueda imaginaria en la que:
+	        - los grados cercanos a 0/360 contienen los colores rojos
+	        - los grados cercanos a 120 contienen los colores verdes
+	        - los grados cercanos a 240 contienen los colores azules
+	  El segundo atributo es el valor de la saturacion
+	  El tercer atributo es el valor 
+	  El cuarto atributo es el rango de opacidad, de 0 a 1
+	  */
+	color: hsla(240, 100%, 50%, 0.5);
 }
 /* font-face: permite distribuir un tipo de fuente para evitar que el usuario carezca de la fuente utilizada en la pagina */
 @font-face {
