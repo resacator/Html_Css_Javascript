@@ -10,7 +10,53 @@ body {
 	text-align: center;
 	border: 1px solid #999999;
 	background: #DDDDDD;
+	
+	/*border-radius: redondear las esquinas de una figura. 
+	  Admite hasta 4 valores:
+	    4 valores separados por ',': supIz, supDe, InfDe, InfIz
+	    2 valores separados por '/': horiz / vert
+	    1 valor: para cada esquina usa el mismo*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	/* box-shadow: crea efecto sombra a un elemento 
+	  El primer valor es el color (usando rgb, #XXXXXX...)
+	  El segundo valor es la distancia horizontal
+	  El tercer valor es la distancia vertical
+	  El cuarto valor es opcional e indica la distancia de difuminado. ojo porque AMPLIA la superficie que cubre...
+	  El quinto valor es opcional: 'inset', aplica el efecto al interior de la caja*/
+	  
+	-moz-box-shadow: rgb(150,150,150) 5px 5px 10px inset;
+	-webkit-box-shadow: rgb(150,150,150) 5px 5px 10px inset;
+	box-shadow: rgb(150,150,150) 5px 5px 10px inset;
+	/*propiedad linear-gradient(a,b X,c Y): permite realizar un degradado de color. La propiedad se asocia al fondo (background).
+	    el primer parametro determina la posición de inicio. Se indica en pixeles, % o clave (top, right...)
+	    el segundo parametro determina el color inicial. Admite punto de terminación del color.
+	    el tercer parametro determina el color final. Admite punto de terminación del color.
+	*/
+	background: -webkit-linear-gradient(top, #FFFFFF 50%, #006699 90%);
+	background: -moz-linear-gradient(top, #FFFFFF 50%, #006699 90%);
+		/*propiedad radial-gradient(a,b,c X,d Y): permite realizar un degradado de color. La propiedad se asocia al fondo (background).
+	    el primer parametro determina la posición de inicio. Se indica en pixeles, % o clave (top, right...)
+	    el segundo parametro determina la forma. Solo admite los valores circle y ellipse.
+	    el tercer parametro determina el color inicial. Admite punto de terminación del color.
+	    el cuarto parametro determina el color final. Admite punto de terminación del color.
+	*/
+	background: -webkit-radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);
+	background: -moz-radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);
+	/*NOTA: LINEAR Y RADIAL SON INCOMPATIBLES ENTRE SÍ*/
 }
 #titulo {
-	font: bold 36px verdana, sans-serif;
+	font: bold 36px MiNuevaFuente,verdana, sans-serif;
+		/* text-shadow: permite aplicar efecto sombra a elementos irregurares como textos
+	  El primer valor es el color (usando rgb, #XXXXXX...)
+	  El segundo valor es la distancia horizontal
+	  El tercer valor es la distancia vertical
+	  El cuarto valor es opcional e indica la distancia de difuminado. ojo porque AMPLIA la superficie que cubre...*/
+	text-shadow: #9999FF 3px 3px 5px;
+}
+/* font-face: permite distribuir un tipo de fuente para evitar que el usuario carezca de la fuente utilizada en la pagina */
+@font-face {
+	font-family: 'MiNuevaFuente';
+	src: url('../resources/Exocet1.ttf');
 }
