@@ -229,3 +229,38 @@ article {
 	-moz-transform: translate(100px);
 	-webkit-transform: translate(100px);
 }
+
+#transform-combined { /*
+	transform: transformaciones combinadas
+				transform permite combinaciones múltiples de rotate, scale, skew y translate
+				*/
+	-moz-transform: translate(100px) rotate(30deg) scale(0.8)
+		skew(10deg, 10deg);
+	-webkit-transform: translate(100px) rotate(30deg) scale(0.8)
+		skew(10deg, 10deg);;
+}
+
+#transform-dinamic:hover { /*
+Si se combinan las nuevas propiedades con las viejas pseudoclases se
+				pueden obtener efectos dinámicos.
+				*/
+	-moz-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+}
+
+#transition { /*
+Permite suavizar las
+				transformaciones, haciendo que ocurran respetando las
+				configuraciones elegidas.<br>
+				- El primer parámetro es el nombre de la propiedad a suavizar. <br>
+				- El segundo parámetro es el tiempo que tardará en realizarse. <br>
+				- El tercer parámetro es la forma de hacer la transición (ease, linear, ease-in,ease-out,ease-in-out) <br>
+				- El cuarto parámetro es el retardo de inicio de la transformación. 
+				*/
+	-moz-transition: -moz-transform 2s ease 0.5s;
+	-webkit-transition: -webkit-transform 2s ease 0.5s;
+}
+#transition:hover {
+	-moz-transform: translate(0px, -100px);
+	-webkit-transform: translate(0px, -100px);
+}
