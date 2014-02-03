@@ -46,8 +46,8 @@ body {
 	*/
 	-moz-border-image: url('../resources/sample.jpg') 29 stretch;
 	-webkit-border-image: url('../resources/sample.jpg') 29 stretch;
-	border-image: url('../resources/sample.jpg') 29 stretch; background :
-	#DDDDDD;
+	border-image: url('../resources/sample.jpg') 29 stretch;
+	background: #DDDDDD;
 	/*border-radius: redondear las esquinas de una figura. 
 	  Admite hasta 4 valores:
 	    4 valores separados por ',': supIz, supDe, InfDe, InfIz
@@ -156,9 +156,28 @@ article {
 	background: -webkit-radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);
 	background: -moz-radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);
 }
+
 #pie {
-	clear: both; /* permite no tener en cuenta las cajas flotantes (propiedad float) a la hora de posicionarse en la web */
+	clear: both;
+	/* permite no tener en cuenta las cajas flotantes (propiedad float) a la hora de posicionarse en la web */
 	text-align: center;
 	padding: 5px;
 	border-top: 1px solid #999999; /* separador superior */
+}
+
+#transform-scale {
+	/* transform: scale: permite presentar el elemento a una escala concreta, 
+	   tomando como base su tamaño original
+      - los valores de 0 a 1 reducen el tamaño
+	    - los valore superiores a 1 aumentan el tamaño
+	  Admite dos valores, aplicados a la escala X y a la escala Y. Si se indica un solo valor se aplica a ambos
+	  */
+	-moz-transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+}
+#transform-rotate {
+	/* transform: rotate: permite rotar el elemento hacia la derecha, indicando el múmero de grados de rotación.
+	  - El valor debe indicarse seguido de la palabra clave "deg"*/
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
 }
