@@ -23,10 +23,12 @@
 				<li><a href="#font-face">@font-face</a></li>
 				<li><a href="#transform-scale">transform:scale</a></li>
 				<li><a href="#transform-rotate">transform:rotate</a></li>
+				<li><a href="#transform-skew">transform:skew</a></li>
+				<li><a href="#transform-translate">transform:translate</a></li>
 			</ul>
 		</nav>
 		<section id="seccion">
-			<article>
+			<article id="border-image">
 				<a name="border-image"><h1>border-image</h1></a> Permite asociar una
 				imagen como elemento generador del borde definido. <br> El
 				ultimo parametro admite los valores: <br>- repeat: el aspecto
@@ -39,7 +41,7 @@
 					<a href="#top">Top</a>
 				</footer>
 			</article>
-			<article>
+			<article id="border-radius">
 				<a name="border-radius"><h1>border-radius</h1></a> Permite redondear
 				las esquinas de una figura. <br> Admite hasta 4 valores:<br>
 				4 valores separados por ',': supIz, supDe, InfDe, InfIz<br> 2
@@ -49,7 +51,7 @@
 					<a href="#top">Top</a>
 				</footer>
 			</article>
-			<article>
+			<article id="box-shadow">
 				<a name="box-shadow"><h1>box-shadow</h1></a> Crea efecto sombra a un
 				elemento. <br>El primer valor es el color (usando rgb,
 				#XXXXXX...). <br>El segundo valor es la distancia horizontal. <br>El
@@ -61,7 +63,7 @@
 					<a href="#top">Top</a>
 				</footer>
 			</article>
-			<article>
+			<article id="linear-gradient">
 				<a name="linear-gradient"><h1>linear-gradient</h1></a> propiedad
 				linear-gradient(a,b X,c Y): <br>Permite realizar un degradado
 				de color. <br>La propiedad se asocia al fondo (background). <br>el
@@ -74,7 +76,7 @@
 					<a href="#top">Top</a>
 				</footer>
 			</article>
-			<article>
+			<article id="radial-gradient">
 				<a name="radial-gradient"><h1>radial-gradient</h1></a> Permite
 				realizar un degradado de color. La propiedad se asocia al fondo
 				(background). <br> El primer parametro determina la posición de
@@ -87,7 +89,7 @@
 					<a href="#top">Top</a>
 				</footer>
 			</article>
-			<article>
+			<article id="outline">
 				<a name="outline"><h1>outline</h1></a> La propiedad outline permite
 				establecer un segundo borde a un elemento y desplazarlo. Utiliza los
 				mismo parámetros que border
@@ -95,14 +97,14 @@
 					<a href="#top">Top</a>
 				</footer>
 			</article>
-			<article>
+			<article id="outline-offset">
 				<a name="outline-offset"><h1>outline-offset</h1></a> la propiedad
 				outline-offset indica la distancia entre los dos bordes.
 				<footer id="pie">
 					<a href="#top">Top</a>
 				</footer>
 			</article>
-			<article>
+			<article id="text-shadow">
 				<a name="text-shadow"><h1>text-shadow</h1></a> Permite aplicar
 				efecto sombra a elementos irregurares como textos <br>El primer
 				valor es el color (usando rgb, #XXXXXX...). <br>El segundo
@@ -113,7 +115,7 @@
 					<a href="#top">Top</a>
 				</footer>
 			</article>
-			<article>
+			<article id="rgba">
 				<a name="rgba"><h1>rgba</h1></a> Funcion para asignar color. Es una
 				versión mejorada de rgb(). <br>El primer atributo es el valor
 				rojo. <br>El segundo atributo es el valor verde. <br>El
@@ -123,7 +125,7 @@
 					<a href="#top">Top</a>
 				</footer>
 			</article>
-			<article>
+			<article id="hsla">
 				<a name="hsla"><h1>hsla</h1></a> Función para asignar color. Es una
 				versión mejorada de hsl(). <br> El primer atributo es el valor
 				del tono: Representa el color extraído de una rueda imaginaria en la
@@ -137,7 +139,7 @@
 					<a href="#top">Top</a>
 				</footer>
 			</article>
-			<article>
+			<article id="font-face">
 				<a name="font-face"><h1>@font-face</h1></a> Permite distribuir un
 				tipo de fuente para evitar que el usuario carezca de la fuente
 				utilizada en la pagina
@@ -162,6 +164,27 @@
 				rotate permite rotar el elemento hacia la derecha, indicando el
 				múmero de grados de rotación.<br> - El valor debe indicarse
 				seguido de la palabra clave "deg"*/
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article id="transform-skew">
+				<a name="transform-skew"><h1>transform: skew</h1></a> transform:
+				skew permite "inclinar" sobre los planos (horizontal, vertical) un
+				elemento <br> - Los valores debe indicarse seguido de la
+				palabra clave "deg" <br> - Cada valor es independiente, y
+				afecta a una y solo una dimensión (X,Y), siendo ambos opcionales.
+				<footer id="pie">
+					<a href="#top">Top</a>
+				</footer>
+			</article>
+			<article id="transform-translate">
+				<a name="transform-translate"><h1>transform: translate</h1></a>
+				transform: translate permite desplazar el elemento a partir de una
+				posición(0, 0), tomando como dicha posición la esquina superior
+				izquierda del elemento usado como referencia. <br> Admite dos
+				valores, aplicados a eje X y al eje Y. Si se indica un solo valor se
+				aplica a ambos*/
 				<footer id="pie">
 					<a href="#top">Top</a>
 				</footer>
